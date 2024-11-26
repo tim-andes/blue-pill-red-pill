@@ -12,7 +12,7 @@ Blue pill > 50%: everyone lives
 Blue pill <= 50%, blues die
 """
 
-# randomly generate an array of color blue, and color red as strings
+# randomly generate an 100 count array of color blue, and color red as strings
 ## blue = 0, red = 1
 ## calculate % type(float) blue: red / blue 
 # take data array in arg 

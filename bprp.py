@@ -47,10 +47,10 @@ def percentage():
 def main():
     the_blue_pill = percentage()
     if the_blue_pill > 50.00:
-        print(f"The Blue pillers voted f{the_blue_pill}. Everyone lives")
+        print(f"The Blue pillers voted {the_blue_pill:.2f}%. Everyone lives")
     else:
         the_red_pill = 100 - the_blue_pill
-        print(f"The Red Pill voted {the_red_pill}%. Blue pillers die.")
+        print(f"The Red Pill voted {the_red_pill:.2f}%. Blue pillers die.")
     return
 
 

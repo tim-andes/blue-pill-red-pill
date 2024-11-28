@@ -35,7 +35,14 @@ class TestBprp(unittest.TestCase):
         self.assertEqual(len(bprp.tally()), 2)
 
     def test_percentage(self):
-                
+        """
+        Tests the `percentage` function.
+        - Check type(float)
+        - Check that percentage is less than or equal to 1.0
+        """     
+        self.assertIsInstance(bprp.percentage(), float)
+        self.assertLessEqual(bprp.percentage(), 100.00)  
+        self.assertGreaterEqual(bprp.percentage(), 0)      
 
     # def test_calculate_percent_blue(self):
     #     """

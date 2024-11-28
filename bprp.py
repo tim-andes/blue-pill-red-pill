@@ -37,10 +37,22 @@ def tally():
             tally_list[1] += 1
     return tally_list
 
-
+def percentage():
+    tally_list = tally()
+    blue = tally_list.pop(0)
+    percent_blue = ((blue / 10000) * 100)
+    print(percent_blue)
+    return percent_blue
 
 def main():
-    return 
+    the_blue_pill = percentage()
+    if the_blue_pill > 50.00:
+        print(f"The Blue pillers voted f{the_blue_pill}. Everyone lives")
+    else:
+        the_red_pill = 100 - the_blue_pill
+        print(f"The Red Pill voted {the_red_pill}%. Blue pillers die.")
+    return
+
 
 if __name__ == "__main__":
     main()
